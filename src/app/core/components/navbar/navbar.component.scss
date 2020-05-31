@@ -1,0 +1,51 @@
+@import "scss/_base.scss";
+
+.navbar {
+  background-color: $light;
+  height: 4rem;
+
+  &.navbar-shadow {
+    color: $dark;
+    position: fixed;
+    @include boxShadow(0, 0.25rem, 4rem, 0.25rem, $navbar-shadow);
+    z-index: 99;
+  }
+
+  &.navbar-separator {
+    border-bottom: 0.0625rem solid $medium;
+    padding: 0 2rem;
+  }
+
+  .content-wrapper {
+    display: flex;
+    margin: 0 1.5rem;
+
+    .brand-img {
+      width: 2rem;
+      margin-right: 0.5rem;
+      & + .brand-name {
+        @include fontStyle($normal, null, 700);
+        color: $primary-dark;
+      }
+    }
+  }
+}
+.menu {
+  @include fontStyle($small);
+
+  .nav-icons {
+    @include materialIconDimension(
+      $normal,
+      $normal,
+      $normal,
+      $dark,
+      $normal,
+      0.25,
+      sub
+    );
+  }
+}
+
+.mat-drawer-content {
+  background-color: $main-bg;
+}

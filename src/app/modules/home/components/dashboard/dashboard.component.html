@@ -1,0 +1,16 @@
+<div fxLayout="column">
+    <div class="hero" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        <div class="text-content" fxFlex>
+            <h1>Welcome to Souvenirs hub</h1>
+            <h3>Blogs on souvenirs from around the world.</h3>
+            <a routerLink="/create" class="button">Create Post</a>
+        </div>
+        <div class="image-content" fxFlex>
+            <img src="assets/images/hero-bg.png" alt=" Hero Image">
+        </div>
+    </div>
+
+    <div class="blog-section">
+        <sh-post-collection [mode]="mode" [posts]="posts" (menuClicked)="onMenuClick($event)"></sh-post-collection>
+    </div>
+</div>

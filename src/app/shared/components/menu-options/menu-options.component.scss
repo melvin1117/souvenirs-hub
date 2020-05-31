@@ -1,0 +1,48 @@
+@import "scss/_base.scss";
+
+.menu-bg-overlay {
+  height: 70%;
+  width: 100%;
+  background: linear-gradient(
+    20deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0) 75%,
+    rgba(0, 0, 0, 0.3) 85%,
+    rgba(0, 0, 0, 0.4)
+  );
+  position: absolute;
+  right: 0;
+  top: 0.6875rem;
+  margin-top: -0.7rem;
+  margin-right: -0.01rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  opacity: 0;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .menu {
+    float: right;
+    color: white;
+  }
+}
+
+button {
+  .menu-icon {
+    @include materialIconDimension(
+      $x-large,
+      $x-large,
+      $x-large,
+      $dark,
+      $normal
+    );
+    margin-right: 0.4rem;
+    margin-top: -0.3rem;
+  }
+
+  .menu-text {
+    @include fontStyle($small);
+  }
+}

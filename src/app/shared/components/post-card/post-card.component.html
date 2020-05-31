@@ -1,0 +1,10 @@
+<div class="card main-card-shadow" (click)="openPost()" [ngClass]="!isTrash() ? 'cursor-pointer' : ''">
+    <sh-menu-options [mode]="mode" [module]="module" [id]="post.id" (menuClicked)="onMenuClick($event)">
+    </sh-menu-options>
+    <div class="image-wrapper">
+        <img [src]="post.image" [alt]="post.title">
+    </div>
+    <div class="post-info">
+        <sh-post-info [post]="post" [module]="module"></sh-post-info>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
+        <mat-toolbar class="navbar navbar-separator content-wrapper">
+            <a class="content-wrapper" routerLink="/">
+                <img class="brand-img" src="assets/images/brand-img.svg" alt="Brand Image">
+            </a>
+        </mat-toolbar>
+        <div fxLayout="column">
+            <mat-nav-list>
+                <a *ngFor="let menu of menus" mat-list-item [routerLink]="menu.route" class="menu">
+                    <mat-icon class="nav-icons">{{menu.icon}}</mat-icon>
+                    {{menu.name}}
+                </a>
+            </mat-nav-list>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+        <mat-toolbar class="navbar navbar-shadow">
+            <div fxShow="true" fxHide.gt-sm="true">
+                <button mat-icon-button (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+
+            <a class="content-wrapper" routerLink="/">
+                <img class="brand-img" src="assets/images/brand-img.svg" alt="">
+                <span class="brand-name">Souvenirs Hub</span>
+            </a>
+            <span class="spacer"></span>
+            <div fxShow="true" fxHide.lt-md="true" class="content-wrapper">
+                <a *ngFor="let menu of menus" mat-button [routerLink]="menu.route" class="menu">
+                    <mat-icon class="nav-icons">{{menu.icon}}</mat-icon>
+                    {{menu.name}}
+                </a>
+            </div>
+        </mat-toolbar>
+        <ng-content></ng-content>
+    </mat-sidenav-content>
+</mat-sidenav-container>

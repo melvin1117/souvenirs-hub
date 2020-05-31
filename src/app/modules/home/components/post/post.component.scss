@@ -1,0 +1,31 @@
+@import "scss/_base.scss";
+
+.post-container {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+
+  .main-post-container {
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    height: fit-content;
+    position: relative;
+
+    .post-section {
+      margin-bottom: 2rem;
+    }
+  }
+
+  h2 {
+    color: $dark;
+    border-bottom: 0.0625rem solid $medium;
+    padding-bottom: 0.2rem;
+  }
+
+  .similar-post-section {
+    padding: 0 1rem 1rem 1rem;
+    box-sizing: border-box;
+    min-width: 30%;
+  }
+}

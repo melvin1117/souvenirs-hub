@@ -1,0 +1,27 @@
+<form [formGroup]="commentFormGroup" #formDirective="ngForm" (ngSubmit)="onSubmit(formDirective)" class="form-wrapper"
+    *ngIf="mode === allModes.EDIT; else viewComment">
+    <div class="comment-form-field">
+        <mat-form-field  appearance="outline">
+            <textarea matInput type="text" formControlName="comment" rows="3" placeholder="Your comment here..."></textarea>
+            <button matSuffix mat-button *ngIf="commentValue" matSuffix mat-icon-button
+                aria-label="Clear" (click)="clearText(formDirective)">
+                <mat-icon>close</mat-icon>
+            </button>
+            <mat-error *ngIf="commentFormGroup.controls.comment.errors?.required">
+                Comment is <strong>required</strong>
+            </mat-error>
+            <mat-error *ngIf="commentFormGroup.controls.comment.errors?.maxlength">
+                Comment's <strong>max length</strong> reached
+            </mat-error>
+        </mat-form-field>
+        <div class="char-count">{{commentValue | characterCount:maxCharAllowed}} character(s) remaining</div>
+    </div>
+    <div class="btn-group">
+        <button mat-stroked-button type="submit">{{action}}</button>
+        <button mat-stroked-button (click)="onCancel($event, formDirective)">Cancel</button>
+    </div>
+</form>
+
+<ng-template #viewComment>
+    {{comment.comment}}
+</ng-template>

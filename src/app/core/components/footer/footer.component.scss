@@ -1,0 +1,33 @@
+@import "scss/_base.scss";
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: $dark;
+  background: $medium;
+  padding: 1rem 0;
+
+  img {
+    width: 2rem;
+    margin-right: 0.5rem;
+    filter: grayscale(75%);
+  }
+
+  a {
+    color: $dark;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  mat-icon {
+    @include materialIconDimension(
+      $small,
+      $small,
+      $small,
+      $secondary,
+      $normal,
+      0.25
+    );
+  }
+}

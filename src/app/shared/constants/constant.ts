@@ -1,0 +1,15 @@
+export const CONSTANTS = {
+  DEFAULT_ERROR_MSG: 'Oops! Something went wrong. Please try again.',
+  POST_DELETE_SUCCESSFULLY: 'Post deleted successfully.',
+  POST_MOVED_TO_TRASH_SUCCESSFULLY: 'Post moved to trash successfully.',
+  POST_RESTORED_SUCCESSFULLY: 'Post restored successfully',
+  POST_UPDATED_SUCCESSFULLY: 'Post updated successfully',
+  ERROR_CREATING_POST: 'All fields are mandatory.',
+  POST_CREATED_SUCCESSFULLY: 'Post created successfully.',
+  COMMENT_CREATED_SUCCESSFULLY: 'Comment created successfully.',
+  COMMENT_DELETE_SUCCESSFULLY: 'Comment deleted successfully.',
+  COMMENT_MOVED_TO_TRASH_SUCCESSFULLY: 'Comment moved to trash successfully.',
+  COMMENT_RESTORED_SUCCESSFULLY: 'Comment restored successfully',
+  COMMENT_UPDATED_SUCCESSFULLY: 'Comment updated successfully',
+  MAX_COMMENT_CHAR_COUNT: 200,
+};

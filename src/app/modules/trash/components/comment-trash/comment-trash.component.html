@@ -1,0 +1,14 @@
+<div class="comment-trash-section">
+  <div *ngIf="comments && comments.length > 0; else noComment" fxLayout="row wrap" fxLayout.lt-sm="column"
+    fxLayoutGap="2rem" fxLayoutAlign="flex-start">
+    <ng-container *ngFor="let comment of comments">
+      <sh-comment-card fxFlex="0 1 calc(25% - 2rem)" fxFlex.lt-md="0 1 calc(50% - 2rem)" fxFlex.lt-sm="100%"
+        [mode]="mode" [module]="module" (refreshComment)="getComments()" [comment]="comment"></sh-comment-card>
+    </ng-container>
+  </div>
+  <ng-template #noComment>
+    <div class="no-record" *ngIf="comments">
+      No Comment Found.
+    </div>
+  </ng-template>
+</div>

@@ -1,0 +1,10 @@
+<div class="post-wrapper-container" *ngIf="post">
+    <div class="header-section" *ngIf="post.image">
+        <img [src]="post.image" [alt]="post.title">
+    </div>
+    <div class="title-section" *ngIf="post.author || post.title">
+        <sh-post-info [post]="post" [module]="module"></sh-post-info>
+    </div>
+    <div class="content-section" *ngIf="post.content" [innerHTML]="post.content">
+    </div>
+</div>

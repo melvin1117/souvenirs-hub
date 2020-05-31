@@ -1,0 +1,10 @@
+<sh-navbar>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+    <sh-footer></sh-footer>
+</sh-navbar>
+<div id="progress-bar" *ngIf="isLoading$ | async">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    <div class="overlay-screen"></div>
+</div>

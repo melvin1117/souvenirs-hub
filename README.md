@@ -1,4 +1,22 @@
-# SouvenirsHut
+# SouvenirsHub
+
+A responsive blogging site developed using Angular 9
+
+It uses angular-in-memory-web-api to simulate API calls.
+
+## Features
+* Dashboard - Lists the active blog posts
+* Create Post - (Preview while creating)
+* Update Post - (Preview while updating)
+* Move Post to trash - Soft deletion
+* Destroy Post- Delete the post permanently
+* Comments Section to each post
+* Update Comment
+* Move Comment to trash - Soft deletion
+* Destroy - Delete the comment permanently 
+* Trash - List out the soft deleted post and comments (Separate tab for post and comment)
+* Restore Post/Comment from Trash
+* Similar Post Section in Post view (List 3 similar posts, randomly selects from available posts)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
 
@@ -25,3 +43,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+# Documentation
+A compodoc documentation available in /documentation folder
+Open index.html file in browser to view
+
+Run `generate-doc` to generate the document
+
+### Note: 
+There is some compatibility issue of compodoc with Angular 9. So if generated using above command, Routes graph won't be generated. Refer the committed documentation for routes graph.

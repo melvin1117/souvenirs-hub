@@ -1,0 +1,24 @@
+<div class="post-container" fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="2rem" fxLayoutAlign="flex-start"
+    *ngIf="post">
+    <div class="main-post-container main-card-shadow" fxFlex="calc(70% - 2rem)" fxFlex.lt-md="calc(60% - 2rem)"
+        fxFlex.lt-sm="100%">
+        <sh-menu-options [module]="module.MAIN_POST" [mode]="mode.VIEW" [id]="pId"
+            (menuClicked)="onMenuClick($event, true)"></sh-menu-options>
+        <div class="post-section">
+            <sh-post-wrapper [post]="post"></sh-post-wrapper>
+        </div>
+        <div class="comment-section">
+            <h2>Comments</h2>
+            <sh-comment-actions [mode]="mode.EDIT" [action]="action.CREATE" (userResponse)="addComment($event)">
+            </sh-comment-actions>
+            <sh-comment-card *ngFor="let comment of comments" [comment]="comment" [mode]="mode.VIEW"
+                [module]="module.COMMENT" (refreshComment)="getComment()"></sh-comment-card>
+        </div>
+    </div>
+    <div class="similar-post-section" fxHide fxShow.gt-sm *ngIf="similarPosts && similarPosts.length > 0">
+        <h2>Similar Posts</h2>
+        <ng-container *ngFor="let post of similarPosts">
+            <sh-post-card [mode]="mode.VIEW" [post]="post" (menuClicked)="onMenuClick($event)"></sh-post-card>
+        </ng-container>
+    </div>
+</div>

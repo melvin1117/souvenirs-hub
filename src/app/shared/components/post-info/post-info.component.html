@@ -1,0 +1,27 @@
+<div class="content" *ngIf="post">
+    <div class="title">{{post.title}}</div>
+    <div class="info">
+        <div class="left-info" *ngIf="post.author && post.createdTime">
+            <div class="user-initial">
+                <sh-name-initial [name]="post.author"></sh-name-initial>
+            </div>
+            <div class="text">
+                <div class="user-name">
+                    {{post.author}}
+                </div>
+                <div class="created-time">
+                    {{post.createdTime | date}}
+                </div>
+            </div>
+        </div>
+        <div class="right-info">
+            <span *ngIf="post.updatedTime && module === moduleEnum.MAIN_POST">
+                Edited on: {{post.updatedTime | date}}
+            </span>
+            <span *ngIf="post.commentCount">
+                <mat-icon class="comment-icon">chat_bubble</mat-icon>
+                {{post.commentCount}}
+            </span>
+        </div>
+    </div>
+</div>

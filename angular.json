@@ -3,32 +3,33 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "souvenirs-hut": {
+    "souvenirs-hub": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
+        "@schematics/angular:": {
           "style": "scss"
         }
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "sh",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/souvenirs-hut",
+            "outputPath": "dist/souvenirs-hub",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src"]
+            },
             "styles": [
-              "src/styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/scss/styles.scss"
             ],
             "scripts": []
           },
@@ -66,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "souvenirs-hut:build"
+            "browserTarget": "souvenirs-hub:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "souvenirs-hut:build:production"
+              "browserTarget": "souvenirs-hub:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "souvenirs-hut:build"
+            "browserTarget": "souvenirs-hub:build"
           }
         },
         "test": {
@@ -87,12 +88,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src"]
+            },
             "styles": [
-              "src/styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/scss/styles.scss"
             ],
             "scripts": []
           }
@@ -105,24 +107,23 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "souvenirs-hut:serve"
+            "devServerTarget": "souvenirs-hub:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "souvenirs-hut:serve:production"
+              "devServerTarget": "souvenirs-hub:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "souvenirs-hut"
+    }
+  },
+  "defaultProject": "souvenirs-hub"
 }

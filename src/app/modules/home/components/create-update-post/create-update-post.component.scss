@@ -1,0 +1,61 @@
+@import "scss/_base.scss";
+
+.cupost-container {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+
+  .post-form-wrapper {
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    height: fit-content;
+
+    .form-wrapper {
+      margin-bottom: 2rem;
+
+      .form-field,
+      .img-input {
+        display: flex;
+        margin-bottom: 1.2rem;
+
+        &.title {
+          width: 80%;
+        }
+      }
+
+      h4 {
+        margin-bottom: 0.3rem;
+        .required {
+          color: red;
+        }
+      }
+
+      button {
+        float: right;
+        margin-top: 1rem;
+
+        &.mat-flat-button.mat-primary {
+          background-color: $primary;
+        }
+        &.mat-flat-button.mat-primary[disabled] {
+          background-color: rgba(0, 0, 0, 0.12);
+        }
+      }
+    }
+  }
+
+  h2 {
+    color: $dark;
+    border-bottom: 0.0625rem solid $medium;
+    padding-bottom: 0.2rem;
+  }
+
+  .post-preview-wrapper {
+    box-sizing: border-box;
+    min-width: 40%;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,28 @@
+<div class="cupost-container" fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="2rem" fxLayoutAlign="flex-start">
+    <div class="post-form-wrapper main-card-shadow" fxFlex="calc(50% - 2rem)" fxFlex.lt-md="calc(50% - 2rem)"
+        fxFlex.lt-sm="100%" *ngIf="post">
+        <h2>{{action}} Post</h2>
+        <form #formDirective="ngForm" (ngSubmit)="onSubmit(formDirective)" class="form-wrapper">
+            <h4>Title<span class="required"> *</span></h4>
+            <mat-form-field class="form-field title" appearance="outline">
+                <input matInput type="text" name="title" ngControl="title" [(ngModel)]="post.title" required>
+            </mat-form-field>
+            <h4>Author Name<span class="required"> *</span></h4>
+            <mat-form-field class="form-field" appearance="outline">
+                <input matInput type="text" name="author" ngControl="author" [(ngModel)]="post.author" required>
+            </mat-form-field>
+            <h4>Main Post Image<span class="required"> *</span></h4>
+            <input type="file" name="image" accept="image/*" class="img-input" ngControl="image"
+                (change)="saveImageToBase64($event)" required>
+            <h4>Post Content<span class="required"> *</span></h4>
+            <angular-editor name="content" [config]="config" [(ngModel)]="post.content" ngControl="content" required>
+            </angular-editor>
+            <button mat-flat-button color="primary" type="submit"
+                [disabled]="formDirective.form.invalid">{{action}}</button>
+        </form>
+    </div>
+    <div class="post-preview-wrapper main-card-shadow" fxHide fxShow.gt-sm>
+        <h2>Preview</h2>
+        <sh-post-wrapper [post]="post"></sh-post-wrapper>
+    </div>
+</div>

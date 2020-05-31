@@ -1,0 +1,64 @@
+@import "scss/_base.scss";
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  height: calc(100% - 1rem);
+  line-height: 1.1rem;
+
+  .title {
+    @include fontStyle($normal, null, 700);
+    flex: 1 1 auto;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include fontStyle($small);
+    padding: 0.25rem 0;
+
+    .left-info {
+      display: flex;
+      align-items: center;
+      .user-initial {
+        margin: 0 0.5rem 0 0.2rem;
+      }
+
+      .text {
+        .user-name {
+          @include fontStyle($small);
+          color: $dark;
+        }
+
+        .created-time {
+          @include fontStyle($x-small);
+          color: $dark;
+        }
+      }
+    }
+
+    .right-info {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-right: 1rem;
+        @include fontStyle($x-small);
+        display: flex;
+        align-items: center;
+      }
+      .comment-icon {
+        @include materialIconDimension(
+          $normal,
+          $normal,
+          $normal,
+          $dark,
+          $normal
+        );
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}

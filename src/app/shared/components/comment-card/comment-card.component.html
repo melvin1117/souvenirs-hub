@@ -1,0 +1,26 @@
+<div class="comment-container">
+    <sh-menu-options [module]="module" [mode]="mode" [id]="comment.id" (menuClicked)="onMenuClick($event)">
+    </sh-menu-options>
+    <div class="comment-info">
+        <div class="comment-left">
+            <div class="user-initial">
+                <sh-name-initial [name]="comment.commenter"></sh-name-initial>
+            </div>
+            <div class="text">
+                <div class="user-name">
+                    {{comment.commenter}}
+                </div>
+                <div class="created-time">
+                    {{comment.createdTime | date}}
+                </div>
+            </div>
+        </div>
+        <div class="comment-right" *ngIf="comment.updatedTime">
+            Edited on: {{comment.updatedTime | date}}
+        </div>
+    </div>
+    <div class="comment-text">
+        <sh-comment-actions [mode]="commentMode" [action]="action" [comment]="comment"
+            (userResponse)="updateComment($event)" (cancel)="cancelEdit()"></sh-comment-actions>
+    </div>
+</div>

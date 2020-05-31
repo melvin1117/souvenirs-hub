@@ -1,0 +1,27 @@
+@import "scss/_base.scss";
+.form-wrapper {
+  display: flex;
+  align-items: flex-start;
+
+  .comment-form-field {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+
+    .char-count {
+      justify-content: flex-end;
+      display: flex;
+      @include fontStyle($x-small);
+    }
+  }
+
+  .btn-group {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    button {
+      margin: 0.25rem 0.5rem 0.5rem 0.5rem;
+      color: $primary;
+    }
+  }
+}

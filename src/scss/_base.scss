@@ -1,0 +1,63 @@
+// font sizes
+$base-font-size: 1rem;
+$xx-small: 0.5;
+$x-small: 0.7;
+$small: 0.8;
+$normal: 1;
+$large: 1.2;
+$x-large: 1.5;
+$xx-large: 2;
+
+//colors
+$primary: #4e8098;
+$primary-light: #90c2e7;
+$primary-dark: #111c44;
+$secondary: #a31621;
+$light: #fcf7f8;
+$medium: #d7dadf;
+$dark: rgb(71, 74, 83);
+$darkest: rgb(42, 43, 44);
+$danger: #ffbaba;
+$danger-shadow: rgba(255, 186, 186, 0.6);
+$danger-dark: #d8000c;
+$success: #bcffba;
+$success-shadow: rgba(188, 255, 186, 0.6);
+$success-dark: #358203;
+$navbar-shadow: rgba(211, 213, 218, 0.78);
+$card-shadow: #cfd2d9;
+$sidenav-backdrop: rgba(144, 194, 231, 0.25);
+$main-bg: #e8eaee;
+
+@mixin fontStyle($size, $align: null, $weight: null) {
+  font-size: $size + rem;
+  text-align: $align;
+  font-weight: $weight;
+}
+
+@mixin boxShadow($xOffset, $yOffset, $blur, $spread, $color) {
+  box-shadow: $xOffset $yOffset $blur $spread $color;
+  -webkit-box-shadow: $xOffset $yOffset $blur $spread $color;
+  -moz-box-shadow: $xOffset $yOffset $blur $spread $color;
+}
+
+@mixin materialIconDimension(
+  $width,
+  $height,
+  $font-size,
+  $color: null,
+  $line-height: null,
+  $margin: null,
+  $vertical-align: null
+) {
+  width: $width + rem;
+  height: $height + rem;
+  font-size: $font-size + rem;
+  line-height: $line-height;
+  margin: if($margin, $margin + rem, $margin);
+  color: $color;
+  vertical-align: if(
+    $vertical-align,
+    $vertical-align !important + rem,
+    $vertical-align
+  );
+}

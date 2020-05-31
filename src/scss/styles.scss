@@ -1,0 +1,91 @@
+@import "_base.scss";
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: $main-bg;
+}
+
+html {
+  font-size: $base-font-size;
+  color: $darkest;
+
+  // Smartphones (portrait and landscape)
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    font-size: calc(#{$base-font-size} - 0.4rem);
+  }
+
+  // iPads (portrait and landscape)
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    font-size: calc(#{$base-font-size} - 0.2rem);
+  }
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+// side-nav backdrop
+.mat-drawer-backdrop.mat-drawer-shown {
+  background-color: $sidenav-backdrop;
+}
+
+// snackbar
+.success-snackbar {
+  background-color: $success;
+  color: $success-dark;
+  @include boxShadow(0, 0.3rem, 0.625rem, 0, $success-shadow);
+}
+
+.error-snackbar {
+  background-color: $danger;
+  color: $danger-dark;
+  @include boxShadow(0, 0.5rem, 0.625rem, 0, $danger-shadow);
+}
+
+// progress bar
+.mat-progress-bar-fill::after {
+  background-color: $primary-light;
+}
+
+.mat-progress-bar-buffer {
+  background-color: $primary-light;
+  opacity: 50%;
+}
+
+/* remove animation and the dots*/
+.mat-progress-bar-background {
+  animation: none;
+  background-color: $primary-light;
+  opacity: 30%;
+  fill: $primary-light;
+}
+
+.no-record {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  @include fontStyle($x-large);
+}
+
+.main-card-shadow {
+  @include boxShadow(0, 0.8rem, 0.8rem, -0.2rem, $card-shadow);
+}

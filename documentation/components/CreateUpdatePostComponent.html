@@ -1,0 +1,1424 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>souvenirs-hub documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">souvenirs-hub documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CreateUpdatePostComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/home/components/create-update-post/create-update-post.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>sh-create-update-post</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./create-update-post.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./create-update-post.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#action">action</a>
+                            </li>
+                            <li>
+                                <a href="#config">config</a>
+                            </li>
+                            <li>
+                                <a href="#pId">pId</a>
+                            </li>
+                            <li>
+                                <a href="#post">post</a>
+                            </li>
+                            <li>
+                                <a href="#submitted">submitted</a>
+                            </li>
+                            <li>
+                                <a href="#subscriptions">subscriptions</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createPost">createPost</a>
+                            </li>
+                            <li>
+                                <a href="#getPostById">getPostById</a>
+                            </li>
+                            <li>
+                                <a href="#initializePostObj">initializePostObj</a>
+                            </li>
+                            <li>
+                                <a href="#isValid">isValid</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#saveImageToBase64">saveImageToBase64</a>
+                            </li>
+                            <li>
+                                <a href="#showErrorSnackbar">showErrorSnackbar</a>
+                            </li>
+                            <li>
+                                <a href="#showSuccessSnackbar">showSuccessSnackbar</a>
+                            </li>
+                            <li>
+                                <a href="#updatePost">updatePost</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, sharedDataService: <a href="../injectables/SharedDataService.html">SharedDataService</a>, snackBar: MatSnackBar, eventListenerService: <a href="../injectables/EventListenerService.html">EventListenerService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>activatedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sharedDataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SharedDataService.html" target="_self" >SharedDataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>snackBar</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatSnackBar</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>eventListenerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/EventListenerService.html" target="_self" >EventListenerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createPost"></a>
+                    <span class="name">
+                        <b>
+                            createPost
+                        </b>
+                        <a href="#createPost"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createPost(formDirective: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>formDirective</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPostById"></a>
+                    <span class="name">
+                        <b>
+                            getPostById
+                        </b>
+                        <a href="#getPostById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPostById()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:47</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializePostObj"></a>
+                    <span class="name">
+                        <b>
+                            initializePostObj
+                        </b>
+                        <a href="#initializePostObj"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializePostObj()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="56"
+                            class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:56</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isValid"></a>
+                    <span class="name">
+                        <b>
+                            isValid
+                        </b>
+                        <a href="#isValid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isValid()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:122</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="126"
+                            class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:126</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <b>
+                            onSubmit
+                        </b>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmit(formDirective: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="73"
+                            class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:73</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>formDirective</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveImageToBase64"></a>
+                    <span class="name">
+                        <b>
+                            saveImageToBase64
+                        </b>
+                        <a href="#saveImageToBase64"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveImageToBase64(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showErrorSnackbar"></a>
+                    <span class="name">
+                        <b>
+                            showErrorSnackbar
+                        </b>
+                        <a href="#showErrorSnackbar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showErrorSnackbar(message: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>message</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showSuccessSnackbar"></a>
+                    <span class="name">
+                        <b>
+                            showSuccessSnackbar
+                        </b>
+                        <a href="#showSuccessSnackbar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showSuccessSnackbar(message: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:108</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>message</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updatePost"></a>
+                    <span class="name">
+                        <b>
+                            updatePost
+                        </b>
+                        <a href="#updatePost"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updatePost(formDirective: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="86"
+                            class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:86</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>formDirective</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="action"></a>
+                        <span class="name">
+                            <b>
+                            action</b>
+                            <a href="#action"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#ACTION" target="_self" >ACTION</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <span class="name">
+                            <b>
+                            config</b>
+                            <a href="#config"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>AngularEditorConfig</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>RichTextEditorConfig.editor</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pId"></a>
+                        <span class="name">
+                            <b>
+                            pId</b>
+                            <a href="#pId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="post"></a>
+                        <span class="name">
+                            <b>
+                            post</b>
+                            <a href="#post"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>PostRequest | Post</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="submitted"></a>
+                        <span class="name">
+                            <b>
+                            submitted</b>
+                            <a href="#submitted"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="subscriptions"></a>
+                        <span class="name">
+                            <b>
+                            subscriptions</b>
+                            <a href="#subscriptions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Subscription[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/home/components/create-update-post/create-update-post.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, OnDestroy } from &#x27;@angular/core&#x27;;
+import { ACTION } from &#x27;src/app/shared/enum/shared-enum&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { AngularEditorConfig } from &#x27;@kolkov/angular-editor&#x27;;
+import { Post, PostRequest } from &#x27;src/app/shared/interfaces/posts&#x27;;
+import { MatSnackBar } from &#x27;@angular/material/snack-bar&#x27;;
+import { SharedDataService } from &#x27;src/app/shared/services/shared-data/shared-data.service&#x27;;
+import { EventListenerService } from &#x27;src/app/shared/services/event-listener/event-listener.service&#x27;;
+import { CustomSnackbarComponent } from &#x27;src/app/shared/components/custom-snackbar/custom-snackbar.component&#x27;;
+import { SnackbarConfig } from &#x27;src/app/configs/snackbar-config&#x27;;
+import { CONSTANTS } from &#x27;src/app/shared/constants/constant&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { NgForm } from &#x27;@angular/forms&#x27;;
+import { RichTextEditorConfig } from &#x27;src/app/configs/rich-text-editor-config&#x27;;
+
+@Component({
+  selector: &#x27;sh-create-update-post&#x27;,
+  templateUrl: &#x27;./create-update-post.component.html&#x27;,
+  styleUrls: [&#x27;./create-update-post.component.scss&#x27;],
+})
+export class CreateUpdatePostComponent implements OnInit, OnDestroy {
+  action: ACTION;
+  submitted &#x3D; false;
+  subscriptions: Subscription[] &#x3D; [];
+  post: PostRequest | Post;
+  config: AngularEditorConfig &#x3D; RichTextEditorConfig.editor;
+  pId: number;
+
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private sharedDataService: SharedDataService,
+    private snackBar: MatSnackBar,
+    private eventListenerService: EventListenerService
+  ) {
+    this.action &#x3D; this.activatedRoute.snapshot.data.action;
+  }
+
+  ngOnInit(): void {
+    if (this.action &#x3D;&#x3D;&#x3D; ACTION.CREATE) {
+      this.initializePostObj();
+    } else {
+      this.pId &#x3D; +this.activatedRoute.snapshot.paramMap.get(&#x27;id&#x27;);
+      this.getPostById();
+    }
+  }
+
+  getPostById() {
+    this.subscriptions.push(
+      this.sharedDataService.getPostById(this.pId).subscribe((response) &#x3D;&gt; {
+        this.post &#x3D; response;
+        this.eventListenerService.updateLoadingStatus(false);
+      })
+    );
+  }
+
+  initializePostObj() {
+    this.post &#x3D; {
+      createdTime: new Date(),
+      isDeleted: false,
+    };
+  }
+
+  saveImageToBase64(event) {
+    if (event.target.files &amp;&amp; event.target.files[0]) {
+      const reader &#x3D; new FileReader();
+      reader.readAsDataURL(event.target.files[0]);
+      reader.onload &#x3D; () &#x3D;&gt; {
+        this.post.image &#x3D; reader.result.toString();
+      };
+    }
+  }
+
+  onSubmit(formDirective: NgForm) {
+    if (this.isValid()) {
+      this.eventListenerService.updateLoadingStatus(true);
+      if (this.action &#x3D;&#x3D;&#x3D; ACTION.CREATE) {
+        this.createPost(formDirective);
+      } else {
+        this.updatePost(formDirective);
+      }
+    } else {
+      this.showErrorSnackbar(CONSTANTS.ERROR_CREATING_POST);
+    }
+  }
+
+  updatePost(formDirective: NgForm) {
+    this.post.updatedTime &#x3D; new Date();
+    this.subscriptions.push(
+      this.sharedDataService
+        .updatePostById(this.pId, this.post)
+        .subscribe((response) &#x3D;&gt; {
+          this.eventListenerService.updateLoadingStatus(false);
+          this.showSuccessSnackbar(CONSTANTS.POST_UPDATED_SUCCESSFULLY);
+        })
+    );
+  }
+  createPost(formDirective: NgForm) {
+    this.subscriptions.push(
+      this.sharedDataService.addPost(this.post).subscribe((response) &#x3D;&gt; {
+        this.eventListenerService.updateLoadingStatus(false);
+        this.showSuccessSnackbar(CONSTANTS.POST_CREATED_SUCCESSFULLY);
+        this.initializePostObj();
+        formDirective.resetForm();
+      })
+    );
+  }
+
+  showSuccessSnackbar(message: any) {
+    this.snackBar.openFromComponent(
+      CustomSnackbarComponent,
+      SnackbarConfig.getSuccessSnackbarConfig(message)
+    );
+  }
+
+  showErrorSnackbar(message: any) {
+    this.snackBar.openFromComponent(
+      CustomSnackbarComponent,
+      SnackbarConfig.getErrorSnackbarConfig(message)
+    );
+  }
+
+  isValid() {
+    return this.post.image;
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptions.forEach((subscription) &#x3D;&gt; {
+      subscription.unsubscribe();
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;cupost-container&quot; fxLayout&#x3D;&quot;row&quot; fxLayout.lt-sm&#x3D;&quot;column&quot; fxLayoutGap&#x3D;&quot;2rem&quot; fxLayoutAlign&#x3D;&quot;flex-start&quot;&gt;
+    &lt;div class&#x3D;&quot;post-form-wrapper main-card-shadow&quot; fxFlex&#x3D;&quot;calc(50% - 2rem)&quot; fxFlex.lt-md&#x3D;&quot;calc(50% - 2rem)&quot;
+        fxFlex.lt-sm&#x3D;&quot;100%&quot; *ngIf&#x3D;&quot;post&quot;&gt;
+        &lt;h2&gt;{{action}} Post&lt;/h2&gt;
+        &lt;form #formDirective&#x3D;&quot;ngForm&quot; (ngSubmit)&#x3D;&quot;onSubmit(formDirective)&quot; class&#x3D;&quot;form-wrapper&quot;&gt;
+            &lt;h4&gt;Title&lt;span class&#x3D;&quot;required&quot;&gt; *&lt;/span&gt;&lt;/h4&gt;
+            &lt;mat-form-field class&#x3D;&quot;form-field title&quot; appearance&#x3D;&quot;outline&quot;&gt;
+                &lt;input matInput type&#x3D;&quot;text&quot; name&#x3D;&quot;title&quot; ngControl&#x3D;&quot;title&quot; [(ngModel)]&#x3D;&quot;post.title&quot; required&gt;
+            &lt;/mat-form-field&gt;
+            &lt;h4&gt;Author Name&lt;span class&#x3D;&quot;required&quot;&gt; *&lt;/span&gt;&lt;/h4&gt;
+            &lt;mat-form-field class&#x3D;&quot;form-field&quot; appearance&#x3D;&quot;outline&quot;&gt;
+                &lt;input matInput type&#x3D;&quot;text&quot; name&#x3D;&quot;author&quot; ngControl&#x3D;&quot;author&quot; [(ngModel)]&#x3D;&quot;post.author&quot; required&gt;
+            &lt;/mat-form-field&gt;
+            &lt;h4&gt;Main Post Image&lt;span class&#x3D;&quot;required&quot;&gt; *&lt;/span&gt;&lt;/h4&gt;
+            &lt;input type&#x3D;&quot;file&quot; name&#x3D;&quot;image&quot; accept&#x3D;&quot;image/*&quot; class&#x3D;&quot;img-input&quot; ngControl&#x3D;&quot;image&quot;
+                (change)&#x3D;&quot;saveImageToBase64($event)&quot; required&gt;
+            &lt;h4&gt;Post Content&lt;span class&#x3D;&quot;required&quot;&gt; *&lt;/span&gt;&lt;/h4&gt;
+            &lt;angular-editor name&#x3D;&quot;content&quot; [config]&#x3D;&quot;config&quot; [(ngModel)]&#x3D;&quot;post.content&quot; ngControl&#x3D;&quot;content&quot; required&gt;
+            &lt;/angular-editor&gt;
+            &lt;button mat-flat-button color&#x3D;&quot;primary&quot; type&#x3D;&quot;submit&quot;
+                [disabled]&#x3D;&quot;formDirective.form.invalid&quot;&gt;{{action}}&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;post-preview-wrapper main-card-shadow&quot; fxHide fxShow.gt-sm&gt;
+        &lt;h2&gt;Preview&lt;/h2&gt;
+        &lt;sh-post-wrapper [post]&#x3D;&quot;post&quot;&gt;&lt;/sh-post-wrapper&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./create-update-post.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;scss/_base.scss&quot;;
+
+.cupost-container {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+
+  .post-form-wrapper {
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    height: fit-content;
+
+    .form-wrapper {
+      margin-bottom: 2rem;
+
+      .form-field,
+      .img-input {
+        display: flex;
+        margin-bottom: 1.2rem;
+
+        &amp;.title {
+          width: 80%;
+        }
+      }
+
+      h4 {
+        margin-bottom: 0.3rem;
+        .required {
+          color: red;
+        }
+      }
+
+      button {
+        float: right;
+        margin-top: 1rem;
+
+        &amp;.mat-flat-button.mat-primary {
+          background-color: $primary;
+        }
+        &amp;.mat-flat-button.mat-primary[disabled] {
+          background-color: rgba(0, 0, 0, 0.12);
+        }
+      }
+    }
+  }
+
+  h2 {
+    color: $dark;
+    border-bottom: 0.0625rem solid $medium;
+    padding-bottom: 0.2rem;
+  }
+
+  .post-preview-wrapper {
+    box-sizing: border-box;
+    min-width: 40%;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="cupost-container" fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="2rem" fxLayoutAlign="flex-start">    <div class="post-form-wrapper main-card-shadow" fxFlex="calc(50% - 2rem)" fxFlex.lt-md="calc(50% - 2rem)"        fxFlex.lt-sm="100%" *ngIf="post">        <h2>{{action}} Post</h2>        <form #formDirective="ngForm" (ngSubmit)="onSubmit(formDirective)" class="form-wrapper">            <h4>Title<span class="required"> *</span></h4>            <mat-form-field class="form-field title" appearance="outline">                <input matInput type="text" name="title" ngControl="title" [(ngModel)]="post.title" required>            </mat-form-field>            <h4>Author Name<span class="required"> *</span></h4>            <mat-form-field class="form-field" appearance="outline">                <input matInput type="text" name="author" ngControl="author" [(ngModel)]="post.author" required>            </mat-form-field>            <h4>Main Post Image<span class="required"> *</span></h4>            <input type="file" name="image" accept="image/*" class="img-input" ngControl="image"                (change)="saveImageToBase64($event)" required>            <h4>Post Content<span class="required"> *</span></h4>            <angular-editor name="content" [config]="config" [(ngModel)]="post.content" ngControl="content" required>            </angular-editor>            <button mat-flat-button color="primary" type="submit"                [disabled]="formDirective.form.invalid">{{action}}</button>        </form>    </div>    <div class="post-preview-wrapper main-card-shadow" fxHide fxShow.gt-sm>        <h2>Preview</h2>        <sh-post-wrapper [post]="post"></sh-post-wrapper>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'sh-root'},{'name': 'CommentActionsComponent', 'selector': 'sh-comment-actions'},{'name': 'CommentCardComponent', 'selector': 'sh-comment-card'},{'name': 'CommentTrashComponent', 'selector': 'sh-comment-trash'},{'name': 'CreateUpdatePostComponent', 'selector': 'sh-create-update-post'},{'name': 'CustomSnackbarComponent', 'selector': 'sh-custom-snackbar'},{'name': 'DashboardComponent', 'selector': 'sh-dashboard'},{'name': 'FooterComponent', 'selector': 'sh-footer'},{'name': 'HomeComponent', 'selector': 'sh-home'},{'name': 'MenuOptionsComponent', 'selector': 'sh-menu-options'},{'name': 'NameInitialComponent', 'selector': 'sh-name-initial'},{'name': 'NavbarComponent', 'selector': 'sh-navbar'},{'name': 'PostCardComponent', 'selector': 'sh-post-card'},{'name': 'PostCollectionComponent', 'selector': 'sh-post-collection'},{'name': 'PostComponent', 'selector': 'sh-post'},{'name': 'PostInfoComponent', 'selector': 'sh-post-info'},{'name': 'PostTrashComponent', 'selector': 'sh-post-trash'},{'name': 'PostWrapperComponent', 'selector': 'sh-post-wrapper'},{'name': 'TrashComponent', 'selector': 'sh-trash'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CreateUpdatePostComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CreateUpdatePostComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

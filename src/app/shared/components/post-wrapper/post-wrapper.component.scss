@@ -1,0 +1,27 @@
+@import "scss/_base.scss";
+
+.post-wrapper-container {
+  .header-section {
+    width: 100%;
+    height: 20rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
+  }
+
+  .title-section {
+    height: 5rem;
+    padding: 1rem;
+    border-bottom: 0.0625rem solid $medium;
+  }
+
+  .content-section {
+    @include fontStyle($normal);
+    padding: 1rem;
+    line-height: 1.5rem;
+  }
+}
