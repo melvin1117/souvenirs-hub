@@ -4,6 +4,8 @@ A responsive blogging site developed using Angular 9
 
 It uses angular-in-memory-web-api to simulate API calls.
 
+You can visit [here](https://souvenirs-hub.herokuapp.com/) to view the application.
+
 ## Features
 * Dashboard - Lists the active blog posts
 * Create Post - (Preview while creating)
